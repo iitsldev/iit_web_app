@@ -69,9 +69,6 @@ function ContactUs() {
     console.log('************** HOST NAME *****************');
     console.log(process.env.NEXT_PUBLIC_HOST);
 
-    console.log('************** TEST *****************');
-    console.log(process.env.RECAPTCHA_SECRET_KEY);
-
     mainAxios
       .post('/mail', chunk, {})
       .then((response) => {
@@ -87,9 +84,8 @@ function ContactUs() {
       })
       .catch((e) => {
         setShowSpinner(false);
-        //console.log('error', e.response.data);
         console.log('error', e.response.data);
-        //setAlertBox('danger', 'Failure', e.response.data.errors.join(', '));
+        setAlertBox('danger', 'Failure', e.response.data.errors.join(', '));
         setShow(true);
         enableDomElement(submitButton);
       });
