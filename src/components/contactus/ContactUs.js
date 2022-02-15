@@ -69,6 +69,9 @@ function ContactUs() {
     console.log('************** HOST NAME *****************');
     console.log(process.env.NEXT_PUBLIC_HOST);
 
+    console.log('************** TEST *****************');
+    console.log(process.env.RECAPTCHA_SECRET_KEY);
+
     mainAxios
       .post('/mail', chunk, {})
       .then((response) => {
