@@ -23,10 +23,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
  });
 
   const formData: FormData = req.body;
-  console.log("form Data >>>>>>>>>>>>>>",formData)
   const human = await validateHuman(formData.token);
-
-  return res.status(400).json({human});
 
   if (!human) {
     res.status(400);
@@ -58,21 +55,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
 };
 
-async function validateHuman(token: string): Promise<any> {
+async function validateHuman(token: string): Promise<boolean> {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
-  const sendGrid = process.env.SENDGRID_API_KEY;
   const response = await recaptchaAxios.post(`/siteverify?secret=${secret}&response=${token}`,{},{});
-
-  //const success = response.data['success'];
-  console.log("<<<<<<<<<<<<< server siteverify >>>>>>>>>>>>>",response);
-  //return success;
-
-  const payload = {
-    token,
-    secret,
-    sendGrid
-  }
-
-  //return response.data;
-  return payload;
+  const success = response.data['success'];
+  return success;
 }
