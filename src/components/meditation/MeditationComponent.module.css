@@ -1,174 +1,205 @@
+.meditationHelp {
+  font: normal normal normal 28px/45px Raleway;
+  letter-spacing: 0px;
+  color: #5d5d5d;
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
 .meditationContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
+display: flex;
+justify-content: center;
+margin-top: 70px;
+margin-bottom: 70px;
 }
 
 .meditationInnerContainer {
-  width: 45%;
-  margin-left: 20px;
-  margin-right: 20px;
+width: 45%;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .title {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 35px;
-  color: #5d5d5d;
-  margin-bottom: 30px;
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 35px;
+color: #5d5d5d;
+margin-bottom: 30px;
 }
 
 .description {
-  font-family: 'Raleway';
-  font-weight: 400;
-  font-size: 20px;
-  color: #616057;
-  line-height: 35px;
+font-family: 'Raleway';
+font-weight: 400;
+font-size: 20px;
+color: #616057;
+line-height: 35px;
 }
 
 .rootContainer {
-  display: grid;
-  grid-template-areas:
-    '. aboutUs .'
-    'focusContainer focusContainer focusContainer';
-  grid-template-columns: 10.78125% 78.4375% 10.78125%;
-  grid-template-rows: auto auto;
-  width: 100%;
+display: grid;
+grid-template-areas:
+  '. aboutUs .'
+  'focusContainer focusContainer focusContainer';
+grid-template-columns: 10.78125% 78.4375% 10.78125%;
+grid-template-rows: auto auto;
+width: 100%;
 }
 
 .ourFocusContainer {
-  grid-area: focusContainer;
-  display: grid;
-  grid-template-areas:
-    '. focusDataArea .'
-    '. focusCardArea focusCardArea';
-  grid-template-columns: 10.78125% 78.4375% 10.78125%;
-  grid-template-rows: auto auto;
-  background: linear-gradient(180deg, #d3eaef 50%, transparent 50%);
-  padding-bottom: 100px;
+grid-area: focusContainer;
+display: grid;
+grid-template-areas:
+  '. focusDataArea .'
+  '. focusCardArea focusCardArea';
+grid-template-columns: 10.78125% 78.4375% 10.78125%;
+grid-template-rows: auto auto;
+background: linear-gradient(180deg, #d3eaef 50%, transparent 50%);
+padding-bottom: 100px;
 }
 
 .ourFocusInnerContainer {
-  grid-area: focusDataArea;
-  display: grid;
-  grid-template-areas:
-    'focusMainHeader'
-    'focusSubHeader';
+grid-area: focusDataArea;
+display: grid;
+grid-template-areas:
+  'focusMainHeader'
+  'focusSubHeader';
 }
 
 .ourFocusHeader {
-  grid-area: focusMainHeader;
-  text-align: left;
-  font: normal normal bold 30px/35px Raleway;
-  letter-spacing: 0px;
-  color: #202020;
-  margin-top: 5%;
+grid-area: focusMainHeader;
+text-align: left;
+font: normal normal bold 30px/35px Raleway;
+letter-spacing: 0px;
+color: #202020;
+margin-top: 5%;
 }
 
 .ourFocusSubHeader {
-  grid-area: focusSubHeader;
-  display: flex;
-  text-align: left;
-  font: normal normal bold 42px/49px Raleway;
-  letter-spacing: 0px;
-  color: #4e4e4e;
-  margin-top: 2%;
+grid-area: focusSubHeader;
+display: flex;
+text-align: left;
+font: normal normal bold 42px/49px Raleway;
+letter-spacing: 0px;
+color: #4e4e4e;
+margin-top: 2%;
 }
 
 .ourFocusSubHeader > .subHeaderText {
-  max-width: 50%;
-  color: #5d5d5d;
+max-width: 50%;
+color: #5d5d5d;
 }
 
 .ourFocusSubHeader > .sliderButtonContainer {
-  margin-left: auto;
-  display: flex;
-  flex-wrap: nowrap;
+margin-left: auto;
+display: flex;
+flex-wrap: nowrap;
 }
 
 .focusCards {
-  grid-area: focusCardArea;
-  margin-top: 40px;
+grid-area: focusCardArea;
+margin-top: 40px;
 }
 
 .sliderButton {
-  display: flex;
-  background: #000000 0% 0% no-repeat padding-box;
-  opacity: 0.29;
-  width: 44px;
-  max-height: 44px;
-  border-radius: 100%;
-  align-content: center;
-  padding: 11px;
-  margin: 5px;
-  cursor: pointer;
+display: flex;
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 0.29;
+width: 44px;
+max-height: 44px;
+border-radius: 100%;
+align-content: center;
+padding: 11px;
+margin: 5px;
+cursor: pointer;
 }
 
 .buttonLeftImage {
-  width: 100%;
-  height: auto;
-  fill: white;
-  opacity: 1;
+width: 100%;
+height: auto;
+fill: white;
+opacity: 1;
 }
 
 .buttonRightImage {
-  width: 100%;
-  height: auto;
-  fill: white;
-  opacity: 1;
+width: 100%;
+height: auto;
+fill: white;
+opacity: 1;
 }
 
 @media (max-width: 1366px) {
-  .ourFocusSubHeader {
-    font: normal normal bold 40px/47px Raleway;
-  }
+.ourFocusSubHeader {
+  font: normal normal bold 40px/47px Raleway;
+}
 
-  .ourFocusSubHeader > .subHeaderText {
-    max-width: 65%;
-  }
+.ourFocusSubHeader > .subHeaderText {
+  max-width: 65%;
+}
 }
 
 @media (max-width: 1024px) {
-  .ourFocusSubHeader {
-    font: normal normal bold 38px/45px Raleway;
-  }
+.ourFocusSubHeader {
+  font: normal normal bold 38px/45px Raleway;
+}
 
-  .ourFocusSubHeader > .subHeaderText {
-    max-width: 70%;
-  }
+.ourFocusSubHeader > .subHeaderText {
+  max-width: 70%;
+}
 }
 
 @media (max-width: 768px) {
-  .ourFocusSubHeader {
-    font: normal normal bold 30px/35px Raleway;
-  }
+.ourFocusSubHeader {
+  font: normal normal bold 30px/35px Raleway;
+}
 
-  .ourFocusSubHeader > .subHeaderText {
-    max-width: 75%;
-  }
+.ourFocusSubHeader > .subHeaderText {
+  max-width: 75%;
+}
 }
 
 @media (max-width: 575px) {
-  .ourFocusContainer {
-    grid-template-columns: 5% 90% 5%;
-  }
+.meditationHelp {
+  font: normal normal normal 25px/40px Raleway;
+  margin-top: 50px;
+  padding: 10px;
+}
 
-  .ourFocusHeader {
-    font: normal normal bold 22px/29px Raleway;
-  }
+.meditationContainer {
+  flex-direction: column;
+}
 
-  .ourFocusSubHeader {
-    flex-wrap: wrap;
-    font: normal normal bold 20px/24px Raleway;
-  }
+.title {
+  font-size: 30px;
+}
 
-  .ourFocusSubHeader > .subHeaderText {
-    max-width: 100%;
-    margin-bottom: 5%;
-  }
+.meditationInnerContainer {
+  width: 90%;
+}
 
-  .ourFocusSubHeader > .sliderButtonContainer {
-    margin-right: auto;
-  }
+.meditationInnerContainer:first-child {
+  margin-bottom: 30px;
+}
+
+.ourFocusContainer {
+  grid-template-columns: 5% 90% 5%;
+}
+
+.ourFocusHeader {
+  font: normal normal bold 22px/29px Raleway;
+}
+
+.ourFocusSubHeader {
+  flex-wrap: wrap;
+  font: normal normal bold 20px/24px Raleway;
+}
+
+.ourFocusSubHeader > .subHeaderText {
+  max-width: 100%;
+  margin-bottom: 5%;
+}
+
+.ourFocusSubHeader > .sliderButtonContainer {
+  margin-right: auto;
+}
 }

@@ -30,9 +30,12 @@ function MeditationComponent() {
   return (
     <div>
       <Container>
-        <div className={styles.meditationContainer}>
+        <div className={styles.meditationHelp}>
+          Are you looking for guidance for your mediation? IIT is willing to render a helping hand in your noble quest.
+        </div>
+        <div className={styles.meditationContainer} id="samatha-meditation">
           <div className={styles.meditationInnerContainer}>
-            <p className={styles.title}>Samatha Mediation</p>
+            <p className={styles.title}>Samatha Meditation</p>
             <p className={styles.description}>
               There are forty (40) meditation subjects called samatha bhāvanā
               (meditation) to tranquilize our mind. Monks in IIT are given
@@ -40,7 +43,7 @@ function MeditationComponent() {
               thoughts.
             </p>
           </div>
-          <div className={styles.meditationInnerContainer}>
+          <div className={styles.meditationInnerContainer} id="vipassana-meditation">
             <p className={styles.title}>Vipassanā Meditation</p>
             <p className={styles.description}>
               One apprehends the reality of life and world with wisdom through

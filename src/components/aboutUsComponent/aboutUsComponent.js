@@ -104,14 +104,14 @@ function AboutUsComponent() {
               are entirely against the real Dhamma and Vinaya.
             </p>
 
-            <div
-              className={`${styles.aboutUsKutiContainer} mbEstablishmentPara`}
-            >
-              <img
-                src="/kuti.png"
-                className={`${styles.establishmentImage1} ${styles.establishmentImage2}`}
-              />
-              <p>
+            <div className={`${styles.establishmentSub} ${styles.establishmentSub1}`}>
+              <div>
+                <img
+                  src="/kuti.png"
+                  className={`${styles.establishmentImage} ${styles.establishmentImage1}`}
+                />
+              </div>
+              <p className="mbEstablishmentPara">
                 Observing this timely need a group of young competent monks from
                 the Śrī Kalyāṇī Yogashrama Saṃsthā, Sri Lanka who have completed
                 their studies in Myanmar and exposed to forest traditions in
@@ -125,32 +125,30 @@ function AboutUsComponent() {
               </p>
             </div>
 
-            <div className={styles.establishmentSub}>
-              <div className={styles.establishmentSubLeft}>
-                <p className="mbEstablishmentPara">
-                  Founding monks of the IIT are students of the Most Venerable
-                  Late Na-Uyane Ariyadhamma Mahā Nāyaka Thera, the Head of the
-                  Śrī Kalyāṇī Yogashrama Saṃsthā and the Vice President of the
-                  Śrī Rāmñña Mahā Nikāya, Sri Lanka. They visited Myanmar for
-                  higher studies in Theravada doctrine with the blessings of the
-                  Mahā Thera and return to Sri Lanka, having successfully
-                  completed their studies.
-                </p>
-
-                <p className="mbEstablishmentPara">
-                  The auspicious establishment of IIT took place on the 15th
-                  November 2019 with the offering of six residential chambers
-                  (kuṭis) for the Mahā Saṅgha by Honorable Maitreepala Sirisena,
-                  the President of Democratic Socialist Republic of Sri Lanka.
-                  Contruction of the kuṭis were done by the Sri Lankan army.
-                </p>
-              </div>
-              <div className={styles.establishmentSubRight}>
+            <div className={`${styles.establishmentSub} ${styles.establishmentSub2}`}>
+              <div>
                 <img
                   src="/mahathero.png"
-                  className={`${styles.establishmentImage1} ${styles.establishmentImage3}`}
+                  className={`${styles.establishmentImage} ${styles.establishmentImage2}`}
                 />
               </div>
+              <p className="mbEstablishmentPara">
+                Founding monks of the IIT are students of the Most Venerable
+                Late Na-Uyane Ariyadhamma Mahā Nāyaka Thera, the Head of the
+                Śrī Kalyāṇī Yogashrama Saṃsthā and the Vice President of the
+                Śrī Rāmñña Mahā Nikāya, Sri Lanka. They visited Myanmar for
+                higher studies in Theravada doctrine with the blessings of the
+                Mahā Thera and return to Sri Lanka, having successfully
+                completed their studies.
+              </p>
+
+              <p className="establishmentPara">
+                The auspicious establishment of IIT took place on the 15th
+                November 2019 with the offering of six residential chambers
+                (kuṭis) for the Mahā Saṅgha by Honorable Maitreepala Sirisena,
+                the President of Democratic Socialist Republic of Sri Lanka.
+                Contruction of the kuṭis were done by the Sri Lankan army.
+              </p>
             </div>
 
             <p>

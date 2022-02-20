@@ -53,7 +53,9 @@ function Footer() {
           <Row xs={1} md={4} lg={6} style={{ color: 'white' }}>
             <Col className={styles.removePaddingStyle}>
               <ul className={styles.removePaddingStyle}>
-                <li className={styles.liMain}> About Us</li>
+                <li className={styles.liMain}>
+                  <a href="/aboutus">About Us</a>
+                </li>
                 {/* <li className={styles.liSub}>
                   {' '}
                   <a href="#"> History of Theravada Buddhism</a>
@@ -77,7 +79,9 @@ function Footer() {
             </Col>
             <Col className={styles.removePaddingStyle}>
               <ul className={styles.ulPaddingStyle}>
-                <li className={styles.liMain}>Institute</li>
+                <li className={styles.liMain}>
+                  <a href="/institute">Institute</a>
+                </li>
                 {/* <li className={styles.liSub}>
                   {' '}
                   <a href="#"> Academy</a>
@@ -98,15 +102,16 @@ function Footer() {
             </Col>
             <Col className={styles.removePaddingStyle}>
               <ul className={styles.ulPaddingStyle}>
-                <li className={styles.liMain}> Education</li>
+                <li className={styles.liMain}>
+                  <a href="/education">Education</a>
+                </li>
                 <li className={styles.liSub}>
-                  {' '}
-                  <a href="#"> Courses Conducted</a>
+                  <a href="/education#courses-conducted">Courses Conducted</a>
                 </li>
-                 <li className={styles.liSub}>
-                  <a href="#"> Dhamma Lectures and Sermons</a>
+                <li className={styles.liSub}>
+                  <a href="/education#dhamma-lectures-and-sermons">Dhamma Lectures and Sermons</a>
                 </li>
-               {/* <li className={styles.liSub}>
+                {/* <li className={styles.liSub}>
                   {' '}
                   <a href="#"> Programms Trainings</a>
                 </li> */}
@@ -114,26 +119,28 @@ function Footer() {
             </Col>
             <Col className={styles.removePaddingStyle}>
               <ul className={styles.ulPaddingStyle}>
-                <li className={styles.liMain}> Meditation</li>
-                <li className={styles.liSub}>
-                  {' '}
-                  <a href="#"> Samatha Mediation</a>
+                <li className={styles.liMain}>
+                  <a href="/meditation">Meditation</a>
                 </li>
                 <li className={styles.liSub}>
-                  {' '}
-                  <a href="#"> Vipassanā Meditation</a>
+                  <a href="/meditation#samatha-meditation">Samatha Meditation</a>
+                </li>
+                <li className={styles.liSub}>
+                  <a href="/meditation/#vipassana-meditation">Vipassanā Meditation</a>
                 </li>
               </ul>
             </Col>
             <Col className={styles.removePaddingStyle}>
               <ul className={styles.ulPaddingStyle}>
-                <li className={styles.liMain}> News &amp; Events</li>
+                <li className={styles.liMain}>
+                  <a href="/newsandevents">News &amp; Events</a>
+                </li>
                 {/* <li className={styles.liSub}>
                   {' '}
                   <a href="#"> News and Events</a>
                 </li> */}
                 <li className={styles.liSub}>
-                  <a href="#"> Timeline</a>
+                  <a href="/newsandevents#timeline">Timeline</a>
                 </li>
                 {/* <li className={styles.liSub}>
                   {' '}
@@ -143,7 +150,9 @@ function Footer() {
             </Col>
             <Col className={styles.removePaddingStyle}>
               <ul className={styles.ulPaddingStyle}>
-                <div className={styles.liContactUs}>Contact Us </div>
+                <div className={styles.liContactUs}>
+                  <a href="/contactus">Contact Us</a>
+                </div>
                 <div className={styles.contactDetails}>
                   <a href="mailto:info@iit.lk">info@iit.lk</a>
                   <br />
@@ -157,8 +166,8 @@ function Footer() {
                 <br />
                 <div className={styles.contactDetails}> Get Directions</div>
                 <div className={styles.supportBtn}>
-                  <Button variant="warning" className={styles.supportBtn}  href="/howtosupport">
-                    How to Support
+                  <Button variant="warning" className={styles.supportBtn} href="/howtosupport">
+                    How To Support
                   </Button>
                 </div>
               </ul>

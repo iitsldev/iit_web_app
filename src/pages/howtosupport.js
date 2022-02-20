@@ -210,6 +210,7 @@ export default function HowToSupport() {
                   <div className="how-to-support-main-body-bank-info-section2-subtitle-val">
                     191
                   </div>
+                  <hr className="how-to-support-main-body-bank-info-separator"></hr>
                 </div>
 
                 <div className="how-to-support-main-body-bank-info-section2-subtitle-cust">

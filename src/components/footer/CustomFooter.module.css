@@ -88,6 +88,8 @@
 .supportBtn {
   border-radius: 30px;
   margin-top: 10px;
+  font-weight: bold;
+  color: #044884;
 }
 
 .liContactUs {
