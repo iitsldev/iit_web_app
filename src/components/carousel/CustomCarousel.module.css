@@ -553,6 +553,8 @@
     display: block;
     position: absolute;
     top: 50px;
+    left: 0px;
+    right: 0px;
   }
 
   .motoImage{
@@ -571,6 +573,8 @@
   .sliderTwoContainer {
     position: absolute;
     top: 30px;
+    left: 0px;
+    right: 0px;
     padding: 0;
     padding-top: 45px;
     bottom: 60px;
