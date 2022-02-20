@@ -31,7 +31,7 @@ export default function Meditation() {
         description="Meditation is a part of daily life of anyone who is seeking spiritual fulfilment."
         photo="/Meditate.png"
         backgroundImg="url(/Ellipse-7.svg)"
-        info="Are you looking for guidance for your mediation? IIT is willing to render a helping hand in your noble quest."
+        // info="Are you looking for guidance for your mediation? IIT is willing to render a helping hand in your noble quest."
       />
 
       <MeditationComponent />

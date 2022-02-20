@@ -157,7 +157,7 @@
   text-align: justify;
 }
 
-.establishmentSub {
+/* .establishmentSub {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
@@ -170,11 +170,7 @@
 
 .establishmentSubRight {
   flex-grow: 1;
-}
-
-.establishmentImage1 {
-  max-width: 300px;
-}
+} */
 
 .missionHeading {
   grid-area: missionHead;
@@ -314,22 +310,39 @@
   opacity: 1;
 }
 
-.aboutUsKutiContainer {
-  display: flex;
-  margin-bottom: 35px;
-  align-items: center;
+.establishmentContent p {
+  margin-bottom: 40px;
+}
+
+.establishmentSub:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.establishmentSub1 {
+  margin-bottom:40px;
+}
+
+.establishmentSub1 p {
+  padding-top:20px;
+}
+
+.establishmentImage{
+  max-width: 300px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  height:300px;
+}
+
+.establishmentImage1 {
+  float:left;
+  margin-right: 40px;
 }
 
 .establishmentImage2 {
-  border-radius: 100%;
-  border: 1px solid gray;
-  margin-right: 40px;
-  height: 300px;
-}
-
-.establishmentImage3 {
-  border-radius: 100%;
-  border: 1px solid #616057;
+  float:right;
+  margin-left: 40px;
 }
 
 @media (max-width: 1366px) {
@@ -525,6 +538,7 @@
 
   .missionText {
     font: normal normal normal 20px/24px Raleway;
+    line-height: 40px;
   }
 
   .ourFocusHeader {
@@ -544,6 +558,18 @@
   .ourFocusSubHeader > .sliderButtonContainer {
     margin-right: auto;
   }
+
+  .establishmentImage1, .establishmentImage2 {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .aboutUsContainer p {
+    line-height: 40px;
+  } 
 }
 
 @media (max-width: 420px) {
@@ -557,5 +583,10 @@
 
   .directionSubHeading {
     font: normal normal bold 18px/22px Raleway;
+  }
+
+  .missionText {
+    line-height: 40px;
+    margin-top: -7px;
   }
 }

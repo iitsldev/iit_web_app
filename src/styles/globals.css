@@ -781,6 +781,10 @@ p {
   width: 36%;
 }
 
+.how-to-support-main-body-bank-info-separator {
+  display: none;
+}
+
 .how-to-support-content {
   display: flex;
   flex-direction: row;
@@ -913,7 +917,33 @@ p {
   font-size: 16px;
 }
 
+@media (max-width: 991px) {
+  .how-to-support-content {
+    flex-direction: column;
+  }
+  
+  .how-to-support-main-body{
+    width: 100%;
+  }
+
+  .how-to-support-main-body-col {
+    padding-right: 10px;
+  }
+
+  .how-to-support-main-body-col:nth-child(even){
+    padding-left: 30px;
+  }
+
+  .how-to-support-main-body-bank-info {
+    width: 100%;
+  }
+}
+
 @media (max-width: 575px) {
+  .how-to-support-content {
+    margin-top: 40px;
+  }
+
   .how-to-support-main-aspects-mobile {
     margin-top: 40px;
   }
@@ -942,15 +972,25 @@ p {
 
   .how-to-support-main-aspects-text {
     text-align: left;
-    font: normal normal normal 16px/28px Raleway;
+    font: normal normal normal 20px/24px Raleway;
+    line-height: 40px;
     letter-spacing: 0px;
     color: #616057;
     opacity: 1;
   }
 
+  .how-to-support-main-body-col {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .how-to-support-main-body-bank-info-section2-col2 {
     flex-direction: column;
     display: flex;
+  }
+
+  .how-to-support-main-body-bank-info-separator{
+    display: block;
   }
 
   .how-to-support-aspect-container {
@@ -1235,6 +1275,6 @@ div.card-description > p {
   font-style: italic;
 }
 
-.mbEstablishmentPara {
+/* .mbEstablishmentPara {
   margin-bottom: 40px;
-}
+} */

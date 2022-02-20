@@ -94,6 +94,7 @@
   flex: 7;
   flex-direction: row-reverse;
   max-width: 1500px;
+  position: relative;
 }
 
 .motoItem {
@@ -120,6 +121,7 @@
 }
 
 .sliderTwoContainer {
+  position: relative;
   display: flex;
   min-height: 356px;
   flex: 7;
@@ -272,7 +274,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .customEllipse {
     bottom: 50%;
     left: -30%;
@@ -361,7 +363,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .customEllipse {
     bottom: 75%;
     left: -25%;
@@ -547,14 +549,30 @@
 }
 
 @media (max-width: 480px){
+  .motoContainer{
+    display: block;
+    position: absolute;
+    top: 50px;
+  }
+
+  .motoImage{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bannerTextOne {
+    margin-top: 50px;
+  }
+
   .bannerTextOne img{
     width:100px;
   }
 
-  .sliderTwoContainer{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 170px;
-    padding-bottom: 170px;
+  .sliderTwoContainer {
+    position: absolute;
+    top: 30px;
+    padding: 0;
+    padding-top: 45px;
+    bottom: 60px;
   }
 }
